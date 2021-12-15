@@ -2,7 +2,6 @@
 # Copyright (c) OpenMMLab. All rights reserved.
 import os
 import os.path as osp
-import platform
 import shutil
 import sys
 import warnings
@@ -142,11 +141,7 @@ def add_mim_extension():
     # parse installment mode
     if 'develop' in sys.argv:
         # installed by `pip install -e .`
-        if platform.system() == 'Windows':
-            # set `copy` mode here since symlink fails on Windows.
-            mode = 'copy'
-        else:
-            mode = 'symlink'
+        mode = 'symlink'
     elif 'sdist' in sys.argv or 'bdist_wheel' in sys.argv:
         # installed by `pip install .`
         # or create source distribution by `python setup.py sdist`

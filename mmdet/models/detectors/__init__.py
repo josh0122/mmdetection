@@ -16,7 +16,6 @@ from .gfl import GFL
 from .grid_rcnn import GridRCNN
 from .htc import HybridTaskCascade
 from .kd_one_stage import KnowledgeDistillationSingleStageDetector
-from .lad import LAD
 from .mask_rcnn import MaskRCNN
 from .mask_scoring_rcnn import MaskScoringRCNN
 from .nasfcos import NASFCOS
@@ -48,5 +47,5 @@ __all__ = [
     'NASFCOS', 'PointRend', 'GFL', 'CornerNet', 'PAA', 'YOLOV3', 'YOLACT',
     'VFNet', 'DETR', 'TridentFasterRCNN', 'SparseRCNN', 'SCNet', 'SOLO',
     'DeformableDETR', 'AutoAssign', 'YOLOF', 'CenterNet', 'YOLOX',
-    'TwoStagePanopticSegmentor', 'PanopticFPN', 'QueryInst', 'LAD'
+    'TwoStagePanopticSegmentor', 'PanopticFPN', 'QueryInst'
 ]

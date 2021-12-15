@@ -219,12 +219,8 @@ def show_result_pyplot(model,
 
     Args:
         model (nn.Module): The loaded detector.
-        img (str or np.ndarray): Image filename or loaded image.
-        result (tuple[list] or list): The detection result, can be either
-            (bbox, segm) or just bbox.
-        score_thr (float): The threshold to visualize the bboxes and masks.
-        title (str): Title of the pyplot figure.
-        wait_time (float): Value of waitKey param.
+        config = mmcv.Config.fromfile(config)
+    elif not isinstance(config, m.
                 Default: 0.
     """
     if hasattr(model, 'module'):
